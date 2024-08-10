@@ -1,58 +1,41 @@
-@font-face {
-    font-family: Founder;
-    src: url(FoundersGroteskCondensed-Bold.ttf);
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@font-face {
-    font-family: CardinalR;
-    src: url(cardinalfruitweb-regular.ttf);
+html,
+body {
+  width: 100%;
+  height: 100%;
 }
 
-@font-face {
-    font-family: Cardinali;
-    src: url(cardinalfruitweb-italic.ttf);
+body {
+  overflow-x: hidden;
 }
-
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html, body{
-    
-    width: 100%;
-    height: 100%;
-}
-
-
-
-
-
 
 #logo {
-    align-items: center;
-    padding-top: 2rem;
-    justify-content: center;
-    display: grid;
-    font-size: 2rem;
-    color: #52796f;
-    font-family: 'Courier New', Courier, monospace
+  align-items: center;
+  padding-top: 2rem;
+  justify-content: center;
+  display: grid;
+  font-size: 2rem;
+  color: #52796f;
+  font-family: "Courier New", Courier, monospace;
 }
-#logo span{
-    font-size: 5rem;
-    color: #2f3e46;
+#logo span {
+  font-size: 5rem;
+  color: #2f3e46;
 }
-#logo h4{
+#logo h4 {
   display: flex;
-    font-family:  ui-monospace;
-    font-size: 1rem;
-    justify-content: center;
-    color: rgb(109, 106, 106);
+  font-family: ui-monospace;
+  font-size: 1rem;
+  justify-content: center;
+  color: rgb(109, 106, 106);
 }
-
-
 
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
@@ -71,14 +54,14 @@ html, body{
   /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: "Poppins", sans-serif;
   --h2-font-size: 1.25rem;
-  --small-font-size: .813rem;
+  --small-font-size: 0.813rem;
 }
 
 /*========== Responsive typography ==========*/
 @media screen and (min-width: 1120px) {
   :root {
     --h2-font-size: 1.5rem;
-    --small-font-size: .875rem;
+    --small-font-size: 0.875rem;
   }
 }
 
@@ -89,14 +72,8 @@ html, body{
   margin: 0;
 }
 
-body {
-  font-family: var(--body-font);
-  background-color: var(--body-color);
-  color: var(--text-color);
-}
-
 img {
-  display: block;
+  /* display: block; */
   max-width: 100%;
   height: auto;
 }
@@ -128,7 +105,7 @@ img {
   width: 280px;
   background-color: var(--container-color);
   padding: 1.5rem 2rem;
-  box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
+  box-shadow: 0 8px 24px hsla(0, 0%, 0%, 0.15);
   border-radius: 1rem;
   position: absolute;
   bottom: -9rem;
@@ -142,14 +119,14 @@ img {
 .card__description {
   display: block;
   font-size: var(--small-font-size);
-  margin-bottom: .25rem;
+  margin-bottom: 0.25rem;
 }
 
 .card__title {
   font-size: var(--h2-font-size);
   font-weight: 500;
   color: var(--title-color);
-  margin-bottom: .75rem;
+  margin-bottom: 0.75rem;
 }
 
 .card__button {
@@ -167,7 +144,7 @@ img {
 .card__article:hover .card__data {
   animation: show-data 1s forwards;
   opacity: 1;
-  transition: opacity .3s;
+  transition: opacity 0.3s;
 }
 
 .card__article:hover {
@@ -206,7 +183,7 @@ img {
     transform: translateY(-10rem);
   }
   100% {
-    transform: translateY(.5rem);
+    transform: translateY(0.5rem);
   }
 }
 
@@ -259,204 +236,537 @@ img {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.main-p{
-    width: 100%;
-    height: 100vh;
-    background-color: rgb(61, 61, 61);
+.main-p {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(61, 61, 61);
 }
 
-#main{
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background-color: aquamarine;
-    overflow: hidden;
+#main {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: aquamarine;
+  overflow: hidden;
 }
 
-#top{
-    position: absolute;
-    top: 0%;
-    width: 100%;
-    height: 50vh;
-    background-color: rgb(255, 255, 255);
-    z-index: 9;
-    overflow: hidden;
+#top {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 50vh;
+  background-color: rgb(255, 255, 255);
+  z-index: 9;
+  overflow: hidden;
 }
 
-#center{
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    transform-origin: center;
-    background-color: #354f52;
-    transition: all cubic-bezier(0.19, 1, 0.22, 1)1s;
-    overflow: hidden;
+#center {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  transform-origin: center;
+  background-color: #354f52;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+  overflow: hidden;
 }
 
-#bottom{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 50vh;
-    background-color: rgb(255, 255, 255);
-    overflow: hidden;
+#bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50vh;
+  background-color: rgb(255, 255, 255);
+  overflow: hidden;
 }
 
-#main h1{
-    font-family: Founder;
-    font-size: 21vw;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+#main h1 {
+  font-family: Founder;
+  font-size: 21vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
+#top-h1 {
+  color: #212529;
+  bottom: 50%;
+}
 
+#bottom-h1 {
+  color: #354f52;
+  top: 0% !important;
+}
+
+.content {
+  background-color: #e3f2fd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+  gap: 4vh;
+}
+
+.content h4 {
+  font-size: 6vw;
+  color: #012a4a;
+  font-family: "Poppins", sans-serif;
+}
+
+.content h3 {
+  width: 50%;
+  font-size: 1.2vw;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  color: #2a2e2e;
+  font-weight: 400;
   
-#top-h1{
-    color:#212529   ;
-    bottom: 50%;
 }
 
-#bottom-h1{
-    color: #354f52;
-    top: 0% !important;
-}
+.content button {
+  background-image: linear-gradient(to right, #314755 0%, #26a0da  51%, #314755  100%);
+  margin: 5px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+  
+  font-family: "Poppins", sans-serif;
 
-.content{
-    margin-top: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100vh;
-    color: #fff;
-    gap: 4vh;
-}
-
-.content h4{
-    
-    font-size: 7vw;
-    color: #0e1616;
-    font-family: Founder;
-}
-
-.content h3{
-    width: 50%;
-    font-size: 2vw;
-    font-family: CardinalR;
-    text-align: center;
-    font-weight: 400;
-    margin: 2rem;
-}
-
-.content .btn{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 20vw;
-    height: 2vw;
-    padding: 1.5rem;
-    border-radius: 25px;
-    background-color: #fff;
-    color: #0d0d0d;
-    font-family: Founder;
-    
-}
-.content .btn button{
+  font-weight: 300;
   border: none;
-  cursor: pointer;
-  background-color: transparent;
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
 
-.content h2{
-  font-size: 3rem;
+         
+
+
+         
+
+.content button:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
+.content h2 {
+  font-size: 4rem;
   font-weight: 600;
   min-width: 280px;
-  margin: 2rem;
-  display: contents;
+  color: #18181b;
+  font-family: "Poppins", sans-serif;
+  /* display: flex; */
 
+  /* margin: 2rem; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
-.content span{
-
+.content span {
   font-size: 6rem;
-    position: relative;
+  position: relative;
 }
-.content span::before{
-    content: "moment";
-    color: #90e0ef;
-    animation: words 20s infinite ;
+.content span::before {
+  content: "moment";
+  color: #52b69a;
+  animation: words 20s infinite;
 }
-.content span::after{
-  content: "";
+.content span::after {
+  /* content: ""; */
   position: absolute;
   width: calc(100% + 8px);
   height: 100%;
-  background-color: #354f52;
+  /* background-color: #354f52; */
   border-left: 2px solid #000000;
   right: -8px;
-  animation: cursor .8s infinite, typing 20s steps(14) infinite;
+  animation: cursor 0.8s infinite, typing 20s steps(14) infinite;
 }
 
-
-@keyframes cursor{
-  to{
+@keyframes cursor {
+  to {
     border-left: 2px solid black;
   }
 }
 
-@keyframes words{
-
-    0%,20%{
-      content:"MOMENT";
-    }
-    21%,40%{
-      content:"LIFE";
-    }
-    41%,60%{
-      content:"WORLD";
-    }
-    61%,80%{
-      content:"MEMORIES";
-    }
-    81%,100%{
-      content:"BEAUTY";
-    }
+@keyframes words {
+  0%,
+  20% {
+    content: "MOMENT";
+  }
+  21%,
+  40% {
+    content: "LIFE";
+  }
+  41%,
+  60% {
+    content: "WORLD";
+  }
+  61%,
+  80% {
+    content: "MEMORIES";
+  }
+  81%,
+  100% {
+    content: "BEAUTY";
+  }
 }
 
 @keyframes typing {
-  10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
-      width: 0;
+  10%,
+  15%,
+  30%,
+  35%,
+  50%,
+  55%,
+  70%,
+  75%,
+  90%,
+  95% {
+    width: 0;
   }
-  5%,20%,25%,40%,45%,60%,65%,80%,85%{
-      width: calc(100% + 8px);
+  5%,
+  20%,
+  25%,
+  40%,
+  45%,
+  60%,
+  65%,
+  80%,
+  85% {
+    width: calc(100% + 8px);
   }
+}
+
+/* scroll bar in horizontal  */
+
+#a {
+  display: flex;
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  height: 60vh; /* Makes the div take up the full height of the viewport */
+  background-color: #354F52;
+}
+#a h3 {
+  font-size: 5rem;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+
+  font-style: normal;
+}
+#a p{
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  width: 50%;
+  color: rgb(212, 212, 212);
+  display: inline-block;
+}
+
+.cont {
+  text-align: center; /* Centers text inside the .cont div */
+}
+
+#b {
+  display: flex;
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  height: auto; /* Makes the div take up the full height of the viewport */
+  /* background-color: #EEF0DC; */
+  background-color: white;
+}
+#b h3 {
+  margin-top: 4rem;
+  font-size: 5rem;
+  color: #2e2a2a;
+  font-family: "Poppins", sans-serif;
+
+  font-style: normal;
+}
+
+/* small and medium #a and #b */
+/* Add media queries for small and medium devices */
+
+/* Small devices (max-width: 576px) */
+@media (max-width: 376px) {
+  #a {
+    height: 40vh; /* Reduce height for small devices */
+  }
+  #a h3 {
+    font-size: 3rem; /* Reduce font size for small devices */
+  }
+  #a p {
+    font-size: 1.2rem; /* Reduce font size for small devices */
+    width: 80%; /* Increase width for small devices */
+  }
+  #b {
+    height: auto; /* Make sure #b takes up the full height */
+  }
+  #b h3 {
+    margin-top: 2rem; /* Reduce margin top for small devices */
+    font-size: 3rem; /* Reduce font size for small devices */
+  }
+}
+
+/* Medium devices (max-width: 768px) */
+@media (max-width: 768px) {
+  #a {
+    height: 50vh; /* Increase height for medium devices */
+  }
+  #a h3 {
+    font-size: 4rem; /* Increase font size for medium devices */
+  }
+  #a p {
+    font-size: 1.5rem; /* Increase font size for medium devices */
+    width: 70%; /* Decrease width for medium devices */
+  }
+  #b {
+    height: auto; /* Make sure #b takes up the full height */
+  }
+  #b h3 {
+    margin-top: 3rem; /* Increase margin top for medium devices */
+    font-size: 4rem; /* Increase font size for medium devices */
+  }
+}
+
+#page2 {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  padding: 1vw 0;
+}
+#page3 {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(231, 231, 214);
+}
+
+#page2 h1 {
+  /* padding-right: 1rem; */
+  font-weight: 400;
+  font-size: 32vw;
+  color: #0d1b2a;
+  text-transform: uppercase;
+}
+
+.page-last {
+  height: 100%;
+  height: 100%;
+  background-color: #919191;
+}
+
+/* intro part */
+
+#main-s {
+  height: 100%;
+  width: 100%;
+
+  align-items: center;
+  justify-content: center;
+}
+
+#text {
+  padding-top: 8rem;
+  /* color: rgb(35, 34, 34); */
+  font-size: 9rem;
+  text-transform: uppercase;
+
+  color: #1b263b;
+  text-align: center;
+
+  font-family: "Poppins", sans-serif;
+
+  font-style: normal;
+}
+#text span {
+  font-weight: 400;
+
+  display: inline-block;
+}
+#home {
+  display: contents;
+  align-items: center;
+  justify-content: center;
+
+  height: 50vh;
+  width: 100%;
+}
+
+#ghe {
+  text-transform: uppercase;
+  font-weight: 200;
+  /* color: rgb(28, 28, 24); */
+  color: #52796f;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+
+  font-size: 6rem;
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#nav {
+  padding: 0 30px;
+  width:auto;
+  /* margin-top: 0.5rem; */
+  margin: 0.5rem 1.2rem;
+  height: 70px;
+  /* background-image: radial-gradient(
+    circle 1292px at -13.6% 51.7%,
+    rgba(0, 56, 68, 1) 0%,
+    rgba(163, 217, 185, 1) 51.5%,
+    rgb(205, 246, 249) 88.6%
+  ); */
+  /* background-image: linear-gradient(120deg, #adb4b8 0%, #d5d5d5 100%); */
+
+  /* background-image: radial-gradient( circle farthest-corner at 3.2% 49.6%,  rgba(80,12,139,0.87) 0%, rgba(161,10,144,0.72) 83.6% ); */
+  /* background-image: linear-gradient(45deg, #539198 0%, #e4efe9 100%); */
+  border-radius: 50px;
+  /* border-bottom: 1px solid black; */
+
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  /* position: fixed; */
+  
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  
+}
+
+#nav #part {
+  
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#nav #part a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  text-decoration: none;
+  color: #1B263B;
+  
+  margin: 2rem;
+}
+#nav #part a:nth-last-child(1) {
+  /* background-color: #90e0ef; */
+  font-weight: 400;
+  color: #ffffff;
+  padding: 0.5rem 0.6rem;
+  /* border: 1px solid black; */
+  border-radius: 50px;
+  border: none;
+  /* border: 1px solid black; */
+  background-color: #1B263B;
+}
+
+/* logo */
+
+#logo1 {
+  /* color: #ffffff; */
+  text-align: center;
+  /* margin: 0.8rem; */
+  /* padding: 0.5rem 0.8rem; */
+  /* padding-left: 1rem; */
+  /* font-size: 1rem; */
+  /* border: none; */
+  /* background-color: #403d39; */
+  /* border-radius: 50px; */
+  gap: 1rem;
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+#logo1 span {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+
+  color: black;
+  border-radius: 75px;
+
+  /* border: 2px solid gray; */
+
+  /* padding: 0.5rem 0.rem; */
+}
+
+
+
+/* grid */
+
+#photos{
+  margin: 8rem;
+}
+
+.columns-2 {
+  column-count: 3;
+  /* column-gap: 7px; */
+}
+
+/* .sm\:columns-3 {
+  column-count: 4;
+} */
+
+/* .gap-4 {
+  gap: 4px;
+} */
+
+.size-full {
+  width: 100%;
+  height: 100%;
+}
+
+.rounded-lg {
+  border-radius: 0.9rem;
+}
+
+.object-contain {
+  object-fit: contain;
+}
+
+/* .mb-4 {
+  margin-bottom: 2px;
+} */
+
+.blur-fade {
+  animation: blur-fade-in 0.5s;
+  opacity: 0;
 }
 
 
 
 
-
+@keyframes blur-fade-in {
+  0% {
+    opacity: 0;
+    filter: blur(10px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
